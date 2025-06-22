@@ -26,7 +26,19 @@
     }
     .article-card:hover {
       transform: translateY(-5px);
-    }
+        <!DOCTYPE html>
+<html>
+  <head>
+    <title>My Articles</title>
+  </head>
+  <body>
+    <h1>Welcome to the Articles Page</h1>
+
+    <script>
+      fetch("https://render.com/docs/web-services#port-binding")
+    </script>
+  </body>
+</html>
     .btn-primary {
       background-color: #1a202c;color: white;
       border-radius: 6px;
@@ -204,23 +216,3 @@
 </footer>
 
 </body></html>
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>My Articles</title>
-  </head>
-  <body>
-    <h1>Welcome to the Articles Page</h1>
-
-    <script>
-      fetch("https://render.com/docs/web-services#port-binding")
-        .then(res => res.json())
-        .then(data => {
-          console.log(data);
-        })
-        .catch(error => {
-          console.error("Error fetching articles:", error);
-        });
-    </script>
-  </body>
-</html>
