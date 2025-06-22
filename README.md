@@ -6,6 +6,15 @@
 <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;family=Source+Sans+Pro:wght@400;600&amp;display=swap" rel="stylesheet"/>
+    fetch('https://backend-u70i.onrender.com')
+  .then(res => res.json())
+  .then(data => {
+    console.log('Received from backend:', data);
+    // Do something with the data
+  })
+  .catch(err => {
+    console.error('Error fetching from backend:', err);
+  });
 <style>
     body {
       font-family: 'Source Sans Pro', sans-serif;
