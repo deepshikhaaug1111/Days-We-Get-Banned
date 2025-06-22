@@ -204,3 +204,4 @@
 </footer>
 
 </body></html>
+fetch("http://localhost:5000/articles")
