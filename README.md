@@ -204,4 +204,9 @@
 </footer>
 
 </body></html>
-fetch("http://localhost:5000/articles")
+fetch("https://your-backend.com/articles")
+  .then(res => res.json())
+  .then(data => {
+    console.log(data);
+  });
+
